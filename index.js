@@ -75,9 +75,9 @@ class DummyLockHomeKey {
       }, 1000);
     });
 
-    //Accessory.addService(lockManagementService);
-    //Accessory.addService(lockMechanismService);
-    //Accessory.addService(nfcAccessService);
+    Accessory.addService(lockManagementService);
+    Accessory.addService(lockMechanismService);
+    Accessory.addService(nfcAccessService);
     //-----
 
     return [informationService, lockManagementService, lockMechanismService, nfcAccessService]
